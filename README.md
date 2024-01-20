@@ -26,7 +26,7 @@ Para autorizar o acesso à API do Gmail, você precisará criar um arquivo clien
 ## Modelo Relacional
 O modelo relacional foi usado para projetar a estrutura do banco de dados. Ele ajuda a entender as relações entre diferentes tabelas e como os dados são armazenados e acessados.
 
-![Modelo-Relacional](Modelo_Fisico.png)
+![Modelo-Relacional](Modelo_Fisico_Final.png)
 
 
 
