@@ -4,8 +4,8 @@ from GmailAPI import *
 
 class Email:
     
-    def __init__(self, userId = 'me', maxResults = 500, proxPage = ""):
-        self.cadastro_variaveis_iniciais()
+    def __init__(self, userId = 'me', maxResults = 500, proxPage = "", host="", user="", password="", database=""):
+        self.cadastro_variaveis_iniciais(host, user, password, database)
         self.busca_informacaoes_email(userId, maxResults, proxPage)
         
         # Se encontrar dados a ser cadastrados no BD
@@ -20,7 +20,7 @@ class Email:
         print("Atualizado os emails da Caixa de Entrada")
 
 
-    def cadastro_variaveis_iniciais(self):
+    def cadastro_variaveis_iniciais(self, host, user, password, database):
         """
         # Função responsável por cadastrar as variáveis que serão utilizadas ao decorrer do código
         """
@@ -31,7 +31,7 @@ class Email:
         self.all_email = []
         
         # Estabelecer a conexão com o Banco de Dados
-        self.conexao = Conexao(host="localhost", user="root", password="", database ="dashboard_gmail")
+        self.conexao = Conexao(host=host, user=user, password=password, database =database)
         
         # Obter o id do último email cadastrado
         if self.conexao.select("SELECT idEmail from Email order by data_email DESC limit 1;") != []:
