@@ -20,8 +20,15 @@ Antes de começar, você precisará dos seguintes itens:
 - Será necessário criar um banco de dados, no qual a estrutura está disponível no seguinte arquivo: [script-bd](https://github.com/SiqueiraGabriel/Consulta-Gmail-API/blob/main/Script-create-bd.sql) 
 
 
-## Autorização
+### Autorização
 Para autorizar o acesso à API do Gmail, você precisará criar um arquivo client_secret.json. Você pode seguir [este tutorial](https://developers.google.com/gmail/api/quickstart/python?hl=pt-br) para criar o arquivo.
+
+## Modelo Relacional
+O modelo relacional foi usado para projetar a estrutura do banco de dados. Ele ajuda a entender as relações entre diferentes tabelas e como os dados são armazenados e acessados.
+
+![Modelo-Relacional](Modelo_Fisico.png)
+
+
 
 ## Executando o projeto
 
