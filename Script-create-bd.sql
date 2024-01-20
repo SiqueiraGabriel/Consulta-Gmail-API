@@ -4,14 +4,14 @@ use dashboard_gmail;
 
 create table Empresa(
 	idEmpresa INT auto_increment,
-    nome VARCHAR(30),
+    nome VARCHAR(45),
     email_dominio VARCHAR(60),
     primary key(idEmpresa)
 );
 
 create table Emitente(
 	idEmitente INT auto_increment,
-    nome VARCHAR(30),
+    nome VARCHAR(60),
     email VARCHAR(60),
     idEmpresa INT,
     primary key(idEmitente),
@@ -20,7 +20,7 @@ create table Emitente(
 
 create table Label(
 	idLabel VARCHAR(30),
-    nome varchar(30),
+    nome varchar(45),
     primary key(idLabel)
 );
 
